@@ -12,14 +12,78 @@ body {
   overflow-x: hidden;
 }
 
- html, body {
+html,
+body {
   touch-action: manipulation;
   -ms-touch-action: manipulation;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   overflow-x: hidden;
   user-select: none;
-} 
+}
+
+/* Loader */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0f111a;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease;
+}
+
+#loader.fade-out {
+  opacity: 0;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid #fff;
+  border-top: 6px solid #00bcd4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  margin-top: 20px;
+  color: #00bcd4;
+  font-size: 13px;
+  font-weight: 600;
+  animation: blink 1.5s infinite;
+}
+
+#percent {
+  font-weight: 700;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+}
 
 /* Navbar Styling */
 .navbar {
@@ -76,8 +140,10 @@ body {
 
 .overlay {
   position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.65);
   z-index: 1;
 }
@@ -419,7 +485,7 @@ body {
   padding-top: 1rem;
   margin-top: 2rem;
 }
-  
+
 
 
 /* Responsive */
@@ -488,7 +554,8 @@ body {
     aspect-ratio: 16 / 9;
     margin-top: 25px;
   }
-   .contact-form {
+
+  .contact-form {
     padding: 20px;
     margin: 200px 15px;
   }
@@ -501,36 +568,40 @@ body {
     font-size: 0px;
   }
 
- .contact-form input {
-  font-size: 8px;
- }
+  .contact-form input {
+    font-size: 8px;
+  }
 
- .contact-form textarea {
-  font-size: 8px;
- }
+  .contact-form textarea {
+    font-size: 8px;
+  }
 }
 
 @media (max-width: 450px) {
   .contact-v3 h2 {
     font-size: 15px;
   }
+
   .contact-v3-grid i {
     font-size: 16px;
   }
+
   .contact-v3-header p {
     font-size: 10px;
   }
+
   .contact-v3-grid h3 {
     font-size: 12px;
   }
+
   .contact-v3-grid p {
     font-size: 10px;
   }
-  
-   .hero {
+
+  .hero {
     padding: 20px;
     height: 100vh;
-    align-items: flex-end;   
+    align-items: flex-end;
   }
 
   .hero-content {
@@ -558,8 +629,10 @@ body {
   }
 
   .hero-bg-text {
-    display: none; /* optional: hide background text */
+    display: none;
+    /* optional: hide background text */
   }
+
   .map-container.small-map {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.08);
@@ -578,13 +651,13 @@ body {
     font-size: 0px;
   }
 
- .contact-form input {
-  font-size: 8px;
- }
+  .contact-form input {
+    font-size: 8px;
+  }
 
- .contact-form textarea {
-  font-size: 8px;
- }
+  .contact-form textarea {
+    font-size: 8px;
+  }
 
   .footer-section {
     text-align: left;
@@ -629,7 +702,7 @@ body {
     text-align: left;
   }
 
- /* .footer-section {
+  /* .footer-section {
     text-align: left;
     padding: 1rem;
   }

@@ -1,3 +1,36 @@
+//=============loding js===================================//
+
+const loader = document.getElementById("loader");
+const main = document.getElementById("main-content");
+const percentText = document.getElementById("percent");
+const loadingText = document.querySelector(".loading-text");
+
+let current = 1;
+
+const interval = setInterval(() => {
+  percentText.textContent = `${current}%`;
+  current++;
+
+  if (current > 100) {
+    clearInterval(interval);
+
+    // Change to success message
+    loadingText.innerHTML = " Successful ✅";
+
+    // Wait, then fade out loader
+    setTimeout(() => {
+      loader.classList.add("fade-out");
+      setTimeout(() => {
+        loader.style.display = "none";
+        main.style.display = "block";
+      }, 1000);
+    }, 1000);
+  }
+}, 100); // 100ms x 100 = 10 seconds
+
+
+
+
 // ======================= Toggle Icon Navbar =======================
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
@@ -40,10 +73,10 @@ window.onscroll = () => {
 
 // ======================= scroll reveal =======================
 ScrollReveal({
-    distance: '80px',
-    duration: 2000,
-    delay: 200,
- });
+  distance: '80px',
+  duration: 2000,
+  delay: 200,
+});
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
@@ -65,15 +98,15 @@ const typed = new Typed('.multiple-text', {
   loop: true
 });
 
- document.addEventListener('gesturestart', function (e) {
-    e.preventDefault();
-     });
+document.addEventListener('gesturestart', function (e) {
+  e.preventDefault();
+});
 
 //====================== scroll teveal ==================
 
-scroll ({
+scroll({
   distanse: '80px',
   duration: 2000,
-  delay: 200, 
+  delay: 200,
 });
 

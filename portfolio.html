@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -11,21 +12,32 @@
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
- <!--My css-->
+  <!--My css-->
   <link rel="stylesheet" href="portfolio.css" />
-   <link rel="icon" href="icon.jpg" class="icon">
+  <link rel="icon" href="icon.jpg" class="icon">
 </head>
+
 <body>
 
-<!-- Navbar -->
+  <!-- Loadind -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading <span id="percent">1%</span></p>
+  </div>
+
+
+  <!-- Navbar -->
   <header class="navbar">
     <img src="icon.jpg" alt="Logo" style="width: 20px;" />
     <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main Navigation">
-     <a href="https://www.facebook.com/share/15miGqqTzK/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i> facebook</a>
-     <a href="https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-twitter"></i> fa-twitter</a>
-     <a href="https://github.com/mohammedshifaaq"><i class="fa-brands fa-github"></i> Github</a>
-     <a href="https://www.instagram.com/dark_king_0502?igsh=aHRibTV6cnB5bG8w&utm_source=qr"><i class="fa-brands fa-instagram"></i> instagram</a>
-     <a href="https://www.linkedin.com/https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+      <a href="https://www.facebook.com/share/15miGqqTzK/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i>
+        facebook</a>
+      <a href="https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-twitter"></i> fa-twitter</a>
+      <a href="https://github.com/mohammedshifaaq"><i class="fa-brands fa-github"></i> Github</a>
+      <a href="https://www.instagram.com/dark_king_0502?igsh=aHRibTV6cnB5bG8w&utm_source=qr"><i
+          class="fa-brands fa-instagram"></i> instagram</a>
+      <a href="https://www.linkedin.com/https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-linkedin"></i>
+        Linkedin</a>
     </nav>
     <div id="menu-icon" class="fa-solid fa-bars" aria-label="Menu"></div>
   </header>
@@ -48,16 +60,12 @@
     </div>
   </section>
 
- <!-- Portfolio Section -->
+  <!-- Portfolio Section -->
   <section class="portfolio-section" id="Home">
     <h1 class="portfolio-title">My Portfolio</h1>
 
     <!-- Search box -->
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Search projects..."
-    />
+    <input type="text" id="searchInput" placeholder="Search projects..." />
 
     <div class="portfolio-grid">
 
@@ -119,60 +127,93 @@
 
 
   <!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-section">
-    <h3> Follow / Contacts</h3>
-   <p>I believe in honesty, curiosity, and continuous improvement — both personally and professionally.</p>
-   <p>Thank you for being part of my journey. I’m excited for what lies ahead, and I’d love to stay connected.</p>
- 
-   <form action="https://api.web3forms.com/submit" method="POST" class="subscribe-form">
+  <footer class="footer">
+    <div class="footer-section">
+      <h3> Follow / Contacts</h3>
+      <p>I believe in honesty, curiosity, and continuous improvement — both personally and professionally.</p>
+      <p>Thank you for being part of my journey. I’m excited for what lies ahead, and I’d love to stay connected.</p>
 
-  <input type="hidden" name="access_key" value="8791d7a7-1359-405b-b563-36b3ad1be6fb" />
+      <form action="https://api.web3forms.com/submit" method="POST" class="subscribe-form">
 
-  <input type="hidden" name="subject" value="New Subscriber Notification" />
+        <input type="hidden" name="access_key" value="8791d7a7-1359-405b-b563-36b3ad1be6fb" />
 
-  <input type="hidden" name="to" value="hellomohammedshifaaq@gmail.com" />
+        <input type="hidden" name="subject" value="New Subscriber Notification" />
 
-  <input type="text" name="email" placeholder="Enter your email" required />
-  <button type="submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
-</form>
+        <input type="hidden" name="to" value="hellomohammedshifaaq@gmail.com" />
 
-    <div class="contact-info">
-      <p><i class="fa-solid fa-phone"></i> Phone: +94 752455270 | +94 752226774</p>
-      <p><i class="fa-solid fa-envelope"></i> Email: hellomohammedshifaaq@gmail.com</p>
+        <input type="text" name="email" placeholder="Enter your email" required />
+        <button type="submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
+      </form>
+
+      <div class="contact-info">
+        <p><i class="fa-solid fa-phone"></i> Phone: +94 752455270 | +94 752226774</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: hellomohammedshifaaq@gmail.com</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15miGqqTzK/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/mohammedshifaaq"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/dark_king_0502?igsh=aHRibTV6cnB5bG8w&utm_source=qr"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Mohammed Shifaaq. All rights reserved. Developed by Shifaaq</p>
+        <!-- <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Disclaimers</a></p> -->
+      </div>
     </div>
-
-    <div class="social-icons">
-     <a href="https://www.facebook.com/share/15miGqqTzK/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
-     <a href="https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-twitter"></i></a>
-     <a href="https://github.com/mohammedshifaaq"><i class="fa-brands fa-github"></i></a>
-     <a href="https://www.instagram.com/dark_king_0502?igsh=aHRibTV6cnB5bG8w&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-     <a href="https://www.linkedin.com/https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-linkedin"></i></a>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© 2025 Mohammed Shifaaq. All rights reserved. Developed by Shifaaq</p>
-      <!-- <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Disclaimers</a></p> -->
-    </div>
-  </div>
-  <div class="footer-iconTop">
+    <!-- <div class="footer-iconTop">
   <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
-</div>
-</footer>
-  
+</div> -->
+  </footer>
+
 
 
   <!-- JavaScript -->
   <script>
-    const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.getElementById('navLinks');
 
-    menuIcon.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      menuIcon.classList.toggle('fa-xmark');
+    //=============loding js===================================//
+
+    const loader = document.getElementById("loader");
+    const main = document.getElementById("main-content");
+    const percentText = document.getElementById("percent");
+    const loadingText = document.querySelector(".loading-text");
+
+    let current = 1;
+
+    const interval = setInterval(() => {
+      percentText.textContent = `${current}%`;
+      current++;
+
+      if (current > 100) {
+        clearInterval(interval);
+
+        loadingText.innerHTML = " Successful ✅";
+
+        setTimeout(() => {
+          loader.classList.add("fade-out");
+          setTimeout(() => {
+            loader.style.display = "none";
+            // main.style.display = "block";
+          }, 1000);
+        }, 1000);
+      }
+    }, 100);
+
+    //======================================================================
+
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.getElementById("navLinks");
+
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuIcon.classList.toggle("fa-xmark"); // Toggle icon to 'X'
+      menuIcon.classList.toggle("fa-bars");  // Toggle back to 'bars'
     });
 
-//================================================================
+    //===========================search=====================================
     const searchInput = document.getElementById('searchInput');
     const portfolioCards = document.querySelectorAll('.portfolio-card');
 
@@ -192,4 +233,5 @@
     });
   </script>
 </body>
+
 </html>
