@@ -26,7 +26,7 @@ const interval = setInterval(() => {
       }, 1000);
     }, 1000);
   }
-}, 100); // 100ms x 100 = 10 seconds
+}, 30); // 100ms x 100 = 10 seconds
 
 
 
