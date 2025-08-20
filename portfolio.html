@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!--My css-->
+  <link rel="stylesheet" href="portfolio.css" />
+  <link rel="icon" href="img/icon.jpg" class="icon">
+</head>
+
+<body>
+
+  <!-- Loadind -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <p class="loading-text">Loading <span id="percent">1%</span></p>
+  </div>
+
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <img src="img/icon.jpg" alt="Logo" style="width: 20px;" />
+    <nav class="nav-links" id="navLinks" role="navigation" aria-label="Main Navigation">
+      <a href="https://www.facebook.com/share/15miGqqTzK/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i>
+        facebook</a>
+      <a href="https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-twitter"></i> fa-twitter</a>
+      <a href="https://github.com/mohammedshifaaq"><i class="fa-brands fa-github"></i> Github</a>
+      <a href="https://www.instagram.com/dark_king_0502?igsh=aHRibTV6cnB5bG8w&utm_source=qr"><i
+          class="fa-brands fa-instagram"></i> instagram</a>
+      <a href="https://www.linkedin.com/https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-linkedin"></i>
+        Linkedin</a>
+    </nav>
+    <div id="menu-icon" class="fa-solid fa-bars" aria-label="Menu"></div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <h4>HELLO!</h4>
+      <h1>I’m <span>MOHAMMED SHIFAQ</span></h1>
+      <h2>WELCOME</h2>
+      <a href="#Home" class="hero-btn">LET'S SEE</a>
+    </div>
+
+    <div class="hero-bg-text">
+      <h1>Happy<br>Working</h1>
+      <p>I CREATE AWESOME WEB &</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section" id="Home">
+    <h1 class="portfolio-title">My Portfolio</h1>
+
+    <!-- Search box -->
+    <input type="text" id="searchInput" placeholder="Search projects..." />
+
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+        <img src="img/Portfolio3.jpeg" alt="Project 1" class="portfolio-img" />
+        <div class="portfolio-content">
+          <div class="portfolio-title-card">Web Application</div>
+          <div class="portfolio-desc">A responsive web app built with React and Firebase.</div>
+          <div class="portfolio-tags">React • Firebase • CSS</div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="img/Portfolio1 - Copy.png" alt="Project 2" class="portfolio-img" />
+        <div class="portfolio-content">
+          <div class="portfolio-title-card">E-commerce Website</div>
+          <div class="portfolio-desc">An e-commerce platform with Stripe payment integration.</div>
+          <div class="portfolio-tags">HTML • JavaScript • Stripe</div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="img/Portfolio2.png" alt="Project 3" class="portfolio-img" />
+        <div class="portfolio-content">
+          <div class="portfolio-title-card">Portfolio Website</div>
+          <div class="portfolio-desc">My personal portfolio showcasing my projects and skills.</div>
+          <div class="portfolio-tags">HTML • CSS • JavaScript</div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="img/Portfolio5.png" alt="Project 4" class="portfolio-img" />
+        <div class="portfolio-content">
+          <div class="portfolio-title-card">Mobile App UI Design</div>
+          <div class="portfolio-desc">A clean and modern UI design for a mobile app prototype.</div>
+          <div class="portfolio-tags">Figma • UI/UX • Design</div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="img/Portfolio4.jpeg" alt="Project 5" class="portfolio-img" />
+        <div class="portfolio-content">
+          <div class="portfolio-title-card">Blog CMS</div>
+          <div class="portfolio-desc">Custom-built CMS for blog content management.</div>
+          <div class="portfolio-tags">PHP • MySQL • Bootstrap</div>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <img src="img/Portfolio6.png" alt="Project 6" class="portfolio-img" />
+        <div class="portfolio-content">
+          <div class="portfolio-title-card">Marketing Website</div>
+          <div class="portfolio-desc">Landing page optimized for conversion and SEO.</div>
+          <div class="portfolio-tags">HTML • CSS • SEO</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-section">
+      <h3> Follow / Contacts</h3>
+      <p>I believe in honesty, curiosity, and continuous improvement — both personally and professionally.</p>
+      <p>Thank you for being part of my journey. I’m excited for what lies ahead, and I’d love to stay connected.</p>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="subscribe-form">
+
+        <input type="hidden" name="access_key" value="8791d7a7-1359-405b-b563-36b3ad1be6fb" />
+
+        <input type="hidden" name="subject" value="New Subscriber Notification" />
+
+        <input type="hidden" name="to" value="hellomohammedshifaaq@gmail.com" />
+
+        <input type="text" name="email" placeholder="Enter your email" required />
+        <button type="submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
+      </form>
+
+      <div class="contact-info">
+        <p><i class="fa-solid fa-phone"></i> Phone: +94 752455270 | +94 752226774</p>
+        <p><i class="fa-solid fa-envelope"></i> Email: hellomohammedshifaaq@gmail.com</p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/15miGqqTzK/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/mohammedshifaaq"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/dark_king_0502?igsh=aHRibTV6cnB5bG8w&utm_source=qr"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/https://x.com/mohammedsh49984?s=21"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Mohammed Shifaaq. All rights reserved. Developed by Shifaaq</p>
+        <!-- <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Disclaimers</a></p> -->
+      </div>
+    </div>
+    <!-- <div class="footer-iconTop">
+  <a href="#top"><i class="fa-solid fa-angle-up"></i></a>
+</div> -->
+  </footer>
+
+
+
+  <!-- JavaScript -->
+  <script>
+
+    //=============loding js===================================//
+
+    const loader = document.getElementById("loader");
+    const main = document.getElementById("main-content");
+    const percentText = document.getElementById("percent");
+    const loadingText = document.querySelector(".loading-text");
+
+    let current = 1;
+
+    const interval = setInterval(() => {
+      percentText.textContent = `${current}%`;
+      current++;
+
+      if (current > 100) {
+        clearInterval(interval);
+
+        loadingText.innerHTML = " Successful ✅";
+
+        setTimeout(() => {
+          loader.classList.add("fade-out");
+          setTimeout(() => {
+            loader.style.display = "none";
+            // main.style.display = "block";
+          }, 1000);
+        }, 1000);
+      }
+    }, 30);
+
+    //======================================================================
+
+    const menuIcon = document.getElementById("menu-icon");
+    const navLinks = document.getElementById("navLinks");
+
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+      menuIcon.classList.toggle("fa-xmark"); // Toggle icon to 'X'
+      menuIcon.classList.toggle("fa-bars");  // Toggle back to 'bars'
+    });
+
+    //===========================search=====================================
+    const searchInput = document.getElementById('searchInput');
+    const portfolioCards = document.querySelectorAll('.portfolio-card');
+
+    searchInput.addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+
+      portfolioCards.forEach(card => {
+        const title = card.querySelector('.portfolio-title-card').textContent.toLowerCase();
+        const desc = card.querySelector('.portfolio-desc').textContent.toLowerCase();
+
+        if (title.includes(query) || desc.includes(query)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
